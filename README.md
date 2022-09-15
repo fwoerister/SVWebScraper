@@ -3,7 +3,7 @@
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
 
-SVWebScraper is a tool to parse information of schools listed on https://schulverzeichnis.eu - a database of all austrian schools.
+SVWebScraper is a tool to parse information of schools listed on http://schulverzeichnis.eu - a database of all austrian schools.
 As this site does not provide means for exporting the data to csv files this webscraper was implemented to do so.
 
 ## How to use it?
