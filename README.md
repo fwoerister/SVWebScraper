@@ -1,7 +1,7 @@
 # SVWebScraper
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
-
+[![PyPI version](https://badge.fury.io/py/svscrape.svg)](https://badge.fury.io/py/svscrape)
 
 SVWebScraper is a tool to parse information of schools listed on http://schulverzeichnis.eu - a database of all austrian schools.
 As this site does not provide means for exporting the data to csv files this webscraper was implemented to do so.

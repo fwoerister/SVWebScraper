@@ -1,5 +1,5 @@
 from unittest import TestCase, mock
-from unittest.mock import patch, MagicMock, mock_open
+from unittest.mock import patch, mock_open
 
 from svwebscraper.exporter import SchoolCSVExporter
 
