@@ -1,6 +1,7 @@
+from urllib.parse import urljoin
+
 import click
 
-from urllib.parse import urljoin
 from svwebscraper.exporter import SchoolCSVExporter
 from svwebscraper.webscraper import SchoolDataWebScrapper
 
