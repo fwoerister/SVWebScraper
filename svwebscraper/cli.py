@@ -12,7 +12,7 @@ DEFAULT_QUERY = '?bundesland=wien'
 
 
 @click.command()
-@click.option('--csv', nargs=1, type=click.File())
+@click.option('--csv', nargs=1, type=click.Path())
 @click.option('--baseurl', nargs=1, default=DEFAULT_BASE_URL)
 @click.option('--type', nargs=1, default=DEFAULT_SCHOOL_TYPE, type=click.Choice(SCHOOL_TYPES))
 @click.option('--query', nargs=1, default=DEFAULT_QUERY)

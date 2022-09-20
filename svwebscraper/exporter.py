@@ -1,7 +1,4 @@
-import os
-
 HEADER = ['NAME', 'ADRESSE', 'PLZ', 'ORT', 'TEL_NR']
-EXPORT_DIRECTORY = './export/'
 
 
 class SchoolCSVExporter:
@@ -9,9 +6,6 @@ class SchoolCSVExporter:
         self.schools = schools
         self.delimiter = delimiter
         self.newline = newline
-
-        if not os.path.isdir(EXPORT_DIRECTORY):
-            os.makedirs(EXPORT_DIRECTORY)
 
     def export_to_file(self, filename, append=False):
         print(f'Export {len(self.schools)} schools to csv file "{filename}"')
@@ -21,7 +15,7 @@ class SchoolCSVExporter:
         else:
             mode = 'w'
 
-        with open(EXPORT_DIRECTORY + filename, mode) as file:
+        with open(filename, mode) as file:
             self._append_header_to_file(file)
             for school in self.schools:
                 self._append_school_to_file(file, school)

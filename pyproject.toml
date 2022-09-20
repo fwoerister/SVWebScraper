@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "svscrape"
-version = "2022.3"
+version = "2022.4"
 description = "A webscraper for extracting information of schools from http://schulverzeichnis.eu"
 readme = "README.md"
 authors = [{ name = "Florian Wörister", email = "florian.woerister@univie.ac.at" }]

@@ -14,7 +14,7 @@ Start scrapping schools from base url ...
 40 schools scrapped from "http://www.schulverzeichnis.eu/typ/neue-mittelschule"
 ...
 
-$ cat ./export/schools.csv
+$ cat ./schools.csv
 NAME;ADRESSE;PLZ;ORT;TEL_NR
 Freie Waldorfschule Wien-West ;Seuttergasse 29;1130;Wien;01/1234
 Mittelschule des Schulvereins der Dominikanerinnen Wien;Schlossberggasse 17;1130;Wien;01/1234
