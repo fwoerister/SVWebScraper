@@ -1,7 +1,7 @@
 from unittest import TestCase, mock
 from unittest.mock import patch, mock_open
 
-from svwebscraper.exporter import SchoolCSVExporter
+from svscrape.exporter import SchoolCSVExporter
 
 
 class School:

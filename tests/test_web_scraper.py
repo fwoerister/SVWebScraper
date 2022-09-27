@@ -1,7 +1,7 @@
 from unittest import TestCase
 from unittest.mock import patch
 
-from svwebscraper.webscraper import SchoolDataWebScrapper, RequestFailedException, School, ParsedPage
+from svscrape.webscraper import SchoolDataWebScrapper, RequestFailedException, School, ParsedPage
 from tests.util.testdata_loader import load_file_to_string
 
 SCHOOL_LIST_HTML_PAGE_WITH_SUCCESSOR = load_file_to_string('testdata/sv_list_with_succeeding_pages.html')
@@ -47,7 +47,7 @@ class ParsedPageTest(TestCase):
 class SchoolDataWebScrapperTest(TestCase):
     @patch('requests.get', side_effect=[HttpResponseMock(SCHOOL_LIST_HTML_PAGE_WITH_SUCCESSOR, 200, 'UTF-8'),
                                         HttpResponseMock(SCHOOL_LIST_HTML_PAGE_WITH_NO_SUCCESSOR, 200, 'UTF-8')])
-    @patch('svwebscraper.webscraper.School')
+    @patch('svscrape.webscraper.School')
     def test_retrieve_schools(self, school_mock, get_mock):
         webscraper = SchoolDataWebScrapper("https://schulverzeichnis.eu")
         schools = webscraper.retrieve_school_list()
